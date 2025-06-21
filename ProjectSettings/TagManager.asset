@@ -8,6 +8,8 @@ TagManager:
   - Coin
   - Medicine
   - Apple
+  - Health
+  - Spike
   layers:
   - Default
   - TransparentFX

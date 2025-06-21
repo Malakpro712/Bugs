@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+           // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

@@ -40,7 +40,7 @@ public class Boss : MonoBehaviour
             }
         }
 
-        if (slider.value == 1)
+        if ((slider.value == 1) && (Apple!= null) && (Apple.activeInHierarchy))
         {
             transform.position = Vector3.MoveTowards(transform.position, Apple.transform.position, speed);
         }
