@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.U2D;
+using Unity.VisualScripting;
 
 public class HealthController : MonoBehaviour
 {
@@ -25,7 +27,10 @@ public class HealthController : MonoBehaviour
 
     void Update()
     {
-        
+        if (lives == 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

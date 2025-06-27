@@ -25,4 +25,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(currentLevel);
     }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
 }
